@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Camera.qml</file>
+        <file>Touch.qml</file>
+        <file>Sensor.qml</file>
+        <file>MyMap.qml</file>
+    </qresource>
+</RCC>
