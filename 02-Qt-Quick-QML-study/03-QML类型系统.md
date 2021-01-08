@@ -64,4 +64,63 @@ Qt Quick模块提供的基本类型表
    }
    ```
 
-   
+
+另外，每当基本类型的一个特性改变时，该基本类型就会发射自身的属性改变的信号    
+
+```js	
+import QtQuick 2.9
+Text {
+    onFontChanged:console.log("font changed")
+    text:"hello Qt!"
+    Text{
+        id:otherText
+    }
+    focus: true 
+    // 下面操作会，调用onChanged信号处理器
+    Keys.onDigit1Pressed:font.pixelSize += 1        // 当1被按下的时候
+    Keys.onDigit2Pressed:font = !font.italic        // 当2被按下的时候
+    Keys.onDigit3Pressed:font = otherText.font      // 当3被按下的时候
+}
+```
+
+## 2 JavaScrept类型    
+
+QML引擎直接支持JavaScript对象和数组。任何标准JavaScript类型都可以在QML中使用var类型进行创建和存储。下面的代码在QML中使用了JavaScript的Date和Array类型：
+
+```js
+import QtQuick 2.9
+Item{
+    property var theArray:[]
+    property var theDate:new Date()
+      	Component.onCompleted:{
+            for(var i = 0; i < 10; i++)
+                theArray.push("Item " + i)
+         console.log("There are", theArray.length,"items in the array")
+         console.log("The time is", theDate.toUTCString())
+        }
+}
+```
+
+## 3 对象类型   
+
+QML对象类型用于QML对象的实例化。对象类型与基本类型最大的区别是，基本类型不能声明一个对象，而对象类型可以通过指定类型名称并在其后的一组大括号里面包括相应属性的方式来声明一个对象。
+
+QML对象类型继承自QtObject，由各个模块提供。应用程序通过导入模块使用各种对象类型。QtQuick模块包含了创建用户界面需要的最基本对象类型。除了导入模块，还可以通过另外两种方式来自定义QML的对象类型：一是创建QML文件来定义对象类型；二是通过C++来定义对象类型，然后在QML引擎中注册该类型。   
+
+## 4 对象的特性    
+
+每个QML对象都包含一组已定义的特性。一个QML文档中的对象声明定义了一个新的类型，其中可以包含如下特性：
+
+	- id特性   
+	- 属性(property)特性
+	- 信号特性 
+	- 信号处理器特性
+	- 方法特性
+	- 方法特性  
+	- 附加属性和附加信息处理器特性    
+	- 枚举特性  
+
+### 4.1 id特性   
+
+
+
