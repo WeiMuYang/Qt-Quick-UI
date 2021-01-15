@@ -6,30 +6,48 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>882</width>
-    <height>566</height>
+    <width>492</width>
+    <height>379</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QQuickWidget" name="quickWidget">
+   <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>70</y>
-      <width>591</width>
-      <height>391</height>
+      <x>40</x>
+      <y>260</y>
+      <width>121</width>
+      <height>41</height>
      </rect>
     </property>
-    <property name="resizeMode">
-     <enum>QQuickWidget::SizeRootObjectToView</enum>
+    <property name="text">
+     <string>Get File List ASync</string>
     </property>
-    <property name="source">
-     <url>
-      <string>qrc:/ping.qml</string>
-     </url>
+   </widget>
+   <widget class="QListView" name="listView">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>30</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonSync">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>260</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Get File List Sync</string>
     </property>
    </widget>
   </widget>
@@ -38,7 +56,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>882</width>
+     <width>492</width>
      <height>23</height>
     </rect>
    </property>
@@ -54,13 +72,6 @@
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <customwidgets>
-  <customwidget>
-   <class>QQuickWidget</class>
-   <extends>QWidget</extends>
-   <header>QtQuickWidgets/QQuickWidget</header>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>

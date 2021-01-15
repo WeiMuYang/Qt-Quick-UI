@@ -1,7 +1,10 @@
 # [Qt-Quick-UI](./)  [img](./02-Qt-Quick-QML-study/img/)  [code](./03-Qt-Quick-QML-code)   
 ## [Qt-Quick-QML-Study](./02-Qt-Quick-QML-study/)
 
-- QML的基本用法    
+- QML的基本用法   
+- QML和C++的集成   
+	- C++集成到QML中    
+	- QML集成C++中    
 - QML需要的编程依赖   
 - 定制化的界面以及控件  
 - QML如何结合Html进行混合编程    
