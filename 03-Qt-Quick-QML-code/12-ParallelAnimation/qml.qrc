@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>CloudHole.qml</file>
+        <file>CusShaderToy.qml</file>
+    </qresource>
+</RCC>
