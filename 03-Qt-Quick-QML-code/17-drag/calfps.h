@@ -4,6 +4,16 @@
 #include <QObject>
 #include <QQuickWindow>
 
+/**
+* Copyright (c)  2021 YWB. All rights reserved
+* @projectName   11-drag
+* @file          calfps.h
+* @brief         摘要
+* @author        Yang Weibin
+* @date          2021-05-30 19:50:37
+*/
+
+
 class CalFps : public QObject
 {
     Q_OBJECT

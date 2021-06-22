@@ -2,6 +2,8 @@
 #include <QDebug>
 #include <QDateTime>
 
+
+
 CalFps::CalFps(QQuickWindow *w, QObject *parent)
   : QObject(parent), m_window(w)
 {
