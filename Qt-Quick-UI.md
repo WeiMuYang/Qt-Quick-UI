@@ -2,7 +2,7 @@
 ## [Qt-Quick-QML-Study](./02-Qt-Quick-QML-study/)
 
 - QML的基本用法   
-- QML和C++的集成   
+- QML和C++的集成    
 	- C++集成到QML中    
 	- QML集成C++中    
 - QML需要的编程依赖   
