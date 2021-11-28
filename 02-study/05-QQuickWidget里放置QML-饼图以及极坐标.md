@@ -1,6 +1,4 @@
-# QQuickWidget放置QML      
-
-
+# QQuickWidget放置QML       
 
 ## 1 C++文档   
 
@@ -34,13 +32,11 @@ StackWgtPages10::StackWgtPages10(Ui::MainWindow *pui, QObject *parent)
 
 ## 2 QML文件     
 
-```qml
+```css
 import QtQuick 2.9      // 版本注意不能写成 2.0
 import QtQuick.Controls 2.0
 import QtCharts 2.3     // 版本注意不能写成 2.0
 import QtQuick.Window 2.2  
-
-
 
 Item {    // 此处是条目    
 //    id: root
